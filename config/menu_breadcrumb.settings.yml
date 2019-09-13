@@ -1,0 +1,61 @@
+determine_menu: true
+disable_admin_page: true
+append_current_page: false
+current_page_as_link: false
+append_member_page: false
+member_page_as_link: false
+remove_home: false
+add_home: false
+home_as_site_name: false
+exclude_empty_url: false
+menu_breadcrumb_menus:
+  main:
+    enabled: 1
+    langhandle: 1
+    weight: -10
+    taxattach: 0
+  main-navigation-fr:
+    enabled: 1
+    langhandle: 1
+    weight: -9
+    taxattach: 0
+  admin:
+    weight: -8
+    enabled: 0
+    taxattach: 0
+    langhandle: 0
+  brand:
+    weight: -7
+    enabled: 0
+    taxattach: 0
+    langhandle: 0
+  brand-fr:
+    weight: -6
+    enabled: 0
+    taxattach: 0
+    langhandle: 0
+  footer:
+    weight: -5
+    enabled: 0
+    taxattach: 0
+    langhandle: 0
+  footer-fr:
+    weight: -4
+    enabled: 0
+    taxattach: 0
+    langhandle: 0
+  tools:
+    weight: -3
+    enabled: 0
+    taxattach: 0
+    langhandle: 0
+  account:
+    weight: -2
+    enabled: 0
+    taxattach: 0
+    langhandle: 0
+_core:
+  default_config_hash: MWtaH6iqiztF4V37kZZSpw-NZBbZijdlO_xMPIUCibY
+stop_on_first_match: false
+derived_active_trail: false
+front_title: null

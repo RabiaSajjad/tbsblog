@@ -1,0 +1,229 @@
+uuid: 347c88fd-ed92-4348-9847-bcdb9cdd0dc5
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.landing_page.body
+    - field.field.node.landing_page.field_meta_tags
+    - field.field.node.landing_page.field_previousnodeid
+    - field.field.node.landing_page.layout_builder__layout
+    - node.type.landing_page
+  content:
+    - 'block_content:basic:8edd662c-2937-4d73-a355-59f02fe8c637'
+    - 'block_content:basic:a40f2fe5-d16f-47a5-925d-fc0d78faec8d'
+    - 'block_content:spotlight:2abef6f5-8f76-402e-91cd-3aaa9be5f649'
+    - 'block_content:spotlight:58229e51-b70a-4730-9891-0d6ceabdf862'
+    - 'block_content:spotlight:a1556b0c-a2d6-40e4-858a-2fa2060e55da'
+  module:
+    - block_content
+    - bootstrap_layouts
+    - layout_builder
+    - metatag
+    - text
+    - user
+third_party_settings:
+  layout_builder:
+    allow_custom: true
+    enabled: true
+    sections:
+      -
+        layout_id: bs_2col
+        layout_settings:
+          layout:
+            wrapper: div
+            classes:
+              row: row
+            add_layout_class: 1
+            attributes: ''
+          regions:
+            left:
+              wrapper: div
+              classes:
+                col-md-8: col-md-8
+              add_region_classes: 1
+              attributes: ''
+            right:
+              wrapper: div
+              classes:
+                col-md-4: col-md-4
+              add_region_classes: 1
+              attributes: ''
+        components:
+          e8eb4baa-1b96-4595-b87a-a51d5a21715c:
+            uuid: e8eb4baa-1b96-4595-b87a-a51d5a21715c
+            region: left
+            configuration:
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              id: 'extra_field_block:node:landing_page:content_moderation_control'
+            additional: {  }
+            weight: 0
+          25a4a57f-dddf-4524-b1b6-a86f3aa368b1:
+            uuid: 25a4a57f-dddf-4524-b1b6-a86f3aa368b1
+            region: left
+            configuration:
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              id: 'field_block:node:landing_page:body'
+              formatter:
+                label: hidden
+                type: text_default
+                settings: {  }
+                third_party_settings: {  }
+            additional: {  }
+            weight: 2
+          a367c73a-224b-4ec1-bee3-3506e9017b3c:
+            uuid: a367c73a-224b-4ec1-bee3-3506e9017b3c
+            region: right
+            configuration:
+              id: 'block_content:8edd662c-2937-4d73-a355-59f02fe8c637'
+              label: 'Social media'
+              provider: block_content
+              label_display: '0'
+              status: true
+              info: ''
+              view_mode: full
+              context_mapping: {  }
+            additional: {  }
+            weight: 0
+        third_party_settings: {  }
+      -
+        layout_id: bs_1col
+        layout_settings:
+          layout:
+            wrapper: div
+            classes:
+              row: row
+            add_layout_class: 1
+            attributes: ''
+          regions:
+            main:
+              wrapper: div
+              classes:
+                col-sm-12: col-sm-12
+              add_region_classes: 1
+              attributes: ''
+        components:
+          f53c94ee-aed0-450f-8f4d-ba2faeda0787:
+            uuid: f53c94ee-aed0-450f-8f4d-ba2faeda0787
+            region: main
+            configuration:
+              id: 'block_content:a40f2fe5-d16f-47a5-925d-fc0d78faec8d'
+              label: Features
+              provider: block_content
+              label_display: '0'
+              status: true
+              info: ''
+              view_mode: full
+              context_mapping: {  }
+            additional: {  }
+            weight: 0
+        third_party_settings: {  }
+      -
+        layout_id: bs_3col
+        layout_settings:
+          layout:
+            wrapper: div
+            classes:
+              row: row
+            add_layout_class: 1
+            attributes: ''
+          regions:
+            left:
+              wrapper: div
+              classes:
+                col-sm-4: col-sm-4
+              add_region_classes: 1
+              attributes: ''
+            middle:
+              wrapper: div
+              classes:
+                col-sm-4: col-sm-4
+              add_region_classes: 1
+              attributes: ''
+            right:
+              wrapper: div
+              classes:
+                col-sm-4: col-sm-4
+              add_region_classes: 1
+              attributes: ''
+        components:
+          f9551baf-c181-4f41-a595-ce6954478b94:
+            uuid: f9551baf-c181-4f41-a595-ce6954478b94
+            region: left
+            configuration:
+              id: 'block_content:58229e51-b70a-4730-9891-0d6ceabdf862'
+              label: 'Spotlight: Greening government'
+              provider: block_content
+              label_display: '0'
+              status: true
+              info: ''
+              view_mode: full
+              context_mapping: {  }
+            additional: {  }
+            weight: 0
+          0cec642c-c68a-43a0-9abe-8073e05a3eb0:
+            uuid: 0cec642c-c68a-43a0-9abe-8073e05a3eb0
+            region: middle
+            configuration:
+              id: 'block_content:a1556b0c-a2d6-40e4-858a-2fa2060e55da'
+              label: 'Spotlight: Living digital'
+              provider: block_content
+              label_display: '0'
+              status: true
+              info: ''
+              view_mode: full
+              context_mapping: {  }
+            additional: {  }
+            weight: 0
+          d71e58a6-2d1b-407a-adfb-d329a555966d:
+            uuid: d71e58a6-2d1b-407a-adfb-d329a555966d
+            region: right
+            configuration:
+              id: 'block_content:2abef6f5-8f76-402e-91cd-3aaa9be5f649'
+              label: 'Spotlight: Performance management'
+              provider: block_content
+              label_display: '0'
+              status: true
+              info: ''
+              view_mode: full
+              context_mapping: {  }
+            additional: {  }
+            weight: 0
+        third_party_settings: {  }
+id: node.landing_page.default
+targetEntityType: node
+bundle: landing_page
+mode: default
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 1
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  content_moderation_control:
+    weight: -20
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_meta_tags:
+    weight: 2
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: metatag_empty_formatter
+    region: content
+  links:
+    weight: 0
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  field_previousnodeid: true
+  langcode: true
+  layout_builder__layout: true
+  search_api_excerpt: true

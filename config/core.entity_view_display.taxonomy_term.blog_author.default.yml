@@ -1,0 +1,123 @@
+uuid: 5ed8aa26-96b9-4eef-a983-953941b15dd5
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.taxonomy_term.blog_author.field_blog_author_image
+    - field.field.taxonomy_term.blog_author.field_position_title
+    - taxonomy.vocabulary.blog_author
+  module:
+    - bootstrap_layouts
+    - layout_builder
+    - text
+third_party_settings:
+  layout_builder:
+    allow_custom: false
+    enabled: true
+    sections:
+      -
+        layout_id: bs_2col
+        layout_settings:
+          layout:
+            wrapper: div
+            classes:
+              row: row
+            add_layout_class: 1
+            attributes: ''
+          regions:
+            left:
+              wrapper: div
+              classes:
+                col-sm-3: col-sm-3
+              add_region_classes: 1
+              attributes: ''
+            right:
+              wrapper: div
+              classes:
+                col-sm-9: col-sm-9
+              add_region_classes: 1
+              attributes: ''
+        components:
+          b65026ed-c624-414b-a56e-8b09b091b27c:
+            uuid: b65026ed-c624-414b-a56e-8b09b091b27c
+            region: left
+            configuration:
+              id: 'field_block:taxonomy_term:blog_author:field_blog_author_image'
+              label: 'Blog author image'
+              provider: layout_builder
+              label_display: '0'
+              formatter:
+                label: hidden
+                type: entity_reference_entity_view
+                settings:
+                  view_mode: default
+                third_party_settings: {  }
+              context_mapping:
+                entity: layout_builder.entity
+            additional: {  }
+            weight: 1
+          330dfbef-6b1f-479f-b261-96c2dab1e0d4:
+            uuid: 330dfbef-6b1f-479f-b261-96c2dab1e0d4
+            region: right
+            configuration:
+              id: 'field_block:taxonomy_term:blog_author:field_position_title'
+              label: 'Position title'
+              provider: layout_builder
+              label_display: '0'
+              formatter:
+                label: hidden
+                type: string
+                settings:
+                  link_to_entity: false
+                third_party_settings: {  }
+              context_mapping:
+                entity: layout_builder.entity
+            additional: {  }
+            weight: -9
+          ac0b8e64-2b4a-46d3-8fc9-27cf33a8d9a5:
+            uuid: ac0b8e64-2b4a-46d3-8fc9-27cf33a8d9a5
+            region: right
+            configuration:
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              id: 'field_block:taxonomy_term:blog_author:description'
+              formatter:
+                label: hidden
+                type: text_default
+                settings: {  }
+                third_party_settings: {  }
+            additional: {  }
+            weight: -8
+        third_party_settings: {  }
+id: taxonomy_term.blog_author.default
+targetEntityType: taxonomy_term
+bundle: blog_author
+mode: default
+content:
+  description:
+    label: hidden
+    type: text_default
+    weight: 2
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_blog_author_image:
+    type: entity_reference_entity_view
+    weight: 0
+    label: above
+    settings:
+      view_mode: default
+      link: false
+    third_party_settings: {  }
+    region: content
+  field_position_title:
+    weight: 1
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+hidden:
+  langcode: true

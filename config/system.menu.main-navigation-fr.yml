@@ -1,0 +1,8 @@
+uuid: 7d134c84-579f-47af-be56-d43ca16f6c6b
+langcode: fr
+status: true
+dependencies: {  }
+id: main-navigation-fr
+label: 'Main navigation FR'
+description: 'Main navigation (French)'
+locked: false
