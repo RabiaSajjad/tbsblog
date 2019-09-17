@@ -10,7 +10,7 @@ dependencies:
     - gcweb
 id: useraccountmenu
 theme: gcweb
-region: sidebar_first
+region: branding
 weight: 0
 provider: null
 plugin: 'system_menu_block:account'
