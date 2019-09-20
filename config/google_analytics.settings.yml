@@ -1,7 +1,7 @@
-account: UA-00000000-00
+account: UA-19331166-1
 premium: false
 domain_mode: 2
-cross_domains: "open.canada.ca\r\nouvert.canada.ca"
+cross_domains: "tbs-blog.canada.ca\r\nblogue-sct.canada.ca"
 visibility:
   request_path_mode: 0
   request_path_pages: "/admin\r\n/admin/*\r\n/batch\r\n/node/add*\r\n/node/*/*\r\n/user/*/*"
